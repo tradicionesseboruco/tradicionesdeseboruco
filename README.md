@@ -62,3 +62,12 @@ Si el video no se ve en GitHub Pages, revisa:
 
 - Instagram: https://www.instagram.com/vozdelatradicion/
 - TikTok: https://www.tiktok.com/@voz.de.la.tradicion
+
+## Entrevistas en TikTok
+
+La sección **Seboruco en movimiento** también incluye dos tarjetas de entrevistas vinculadas a TikTok:
+
+- Entrevista 1: https://www.tiktok.com/@voz.de.la.tradicion/video/7644213689977031957
+- Entrevista 2: https://www.tiktok.com/@voz.de.la.tradicion/video/7643442962352868629
+
+Estas entrevistas no se suben como archivos pesados; se abren desde TikTok para que la página cargue más rápido.

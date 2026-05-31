@@ -1818,7 +1818,7 @@ body.modal-open {
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(circle at 15% 12%, rgba(200, 169, 107, 0.16), transparent 34%),
+    radial-gradient(circle at 15% 12%, rgba(200, 169, 107, 0.14), transparent 34%),
     linear-gradient(135deg, #0f0f0f 0%, #1d1c19 48%, #2f3526 100%);
   color: var(--off-white);
 }
@@ -1833,15 +1833,45 @@ body.modal-open {
   color: rgba(250, 248, 243, 0.74);
 }
 
-.video-feature {
+.motion-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.85fr);
+  gap: 1.7rem;
+  align-items: stretch;
+  margin-top: 3rem;
+}
+
+.motion-card {
   position: relative;
-  max-width: 980px;
-  margin: 0 auto;
-  border-radius: 34px;
   overflow: hidden;
-  border: 1px solid rgba(200, 169, 107, 0.34);
-  background: rgba(15, 15, 15, 0.42);
-  box-shadow: 0 34px 90px rgba(0, 0, 0, 0.42);
+  border-radius: 32px;
+  border: 1px solid rgba(200, 169, 107, 0.28);
+  background:
+    linear-gradient(180deg, rgba(250, 248, 243, 0.09), rgba(250, 248, 243, 0.03)),
+    rgba(15, 15, 15, 0.54);
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.38);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.motion-card-video {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-frame {
+  position: relative;
+  padding: 1rem 1rem 0;
+}
+
+.video-frame::before {
+  content: "";
+  position: absolute;
+  inset: 0.55rem;
+  border-radius: 28px;
+  border: 1px solid rgba(245, 239, 230, 0.14);
+  pointer-events: none;
+  z-index: 2;
 }
 
 .seboruco-video {
@@ -1849,38 +1879,76 @@ body.modal-open {
   display: block;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  border-radius: 24px;
   background: #000;
 }
 
-.video-caption {
-  position: absolute;
-  left: 1.4rem;
-  right: 1.4rem;
-  bottom: 1.4rem;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem 1rem;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 1.2rem;
-  border-radius: 22px;
-  background: rgba(15, 15, 15, 0.58);
-  border: 1px solid rgba(245, 239, 230, 0.14);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+.motion-card-body {
+  padding: 1.3rem 1.5rem 1.55rem;
 }
 
-.video-caption span {
+.motion-card-body span {
+  display: inline-flex;
+  margin-bottom: 0.65rem;
   color: var(--gold);
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   font-weight: 900;
 }
 
-.video-caption strong {
+.motion-card-body h3 {
+  margin: 0 0 0.65rem;
   color: var(--off-white);
-  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-family: var(--font-title);
+  font-size: clamp(1.45rem, 2.2vw, 2rem);
+  line-height: 1.05;
+}
+
+.motion-card-body p {
+  margin: 0;
+  color: rgba(250, 248, 243, 0.72);
+  line-height: 1.7;
+}
+
+.interview-column {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.interview-card {
+  display: grid;
+  grid-template-columns: 78px 1fr;
+  align-items: center;
+  min-height: 190px;
+}
+
+.interview-icon {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  margin-left: 1.1rem;
+  border-radius: 18px;
+  color: var(--black);
+  background: var(--gold);
+  font-size: 1.6rem;
+  font-weight: 900;
+  box-shadow: 0 15px 38px rgba(200, 169, 107, 0.25);
+}
+
+.interview-card .motion-card-body {
+  padding-left: 0.25rem;
+}
+
+.interview-card .motion-card-body p {
+  margin-bottom: 1rem;
+}
+
+.btn.compact {
+  min-height: 44px;
+  padding: 0.75rem 1.1rem;
+  font-size: 0.85rem;
 }
 
 .btn-video {
@@ -1896,20 +1964,50 @@ body.modal-open {
   border-color: rgba(200, 169, 107, 0.8);
 }
 
+@media (max-width: 980px) {
+  .motion-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .interview-column {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 680px) {
-  .video-feature {
+  .motion-grid {
+    gap: 1rem;
+  }
+
+  .motion-card,
+  .video-frame::before {
     border-radius: 24px;
   }
 
-  .video-caption {
-    position: static;
-    border-radius: 0;
-    justify-content: flex-start;
-    background: rgba(15, 15, 15, 0.78);
+  .video-frame {
+    padding: 0.75rem 0.75rem 0;
   }
 
   .seboruco-video {
-    aspect-ratio: 9 / 14;
+    aspect-ratio: 16 / 9;
     object-fit: contain;
+    border-radius: 18px;
+  }
+
+  .interview-column {
+    grid-template-columns: 1fr;
+  }
+
+  .interview-card {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .interview-icon {
+    margin: 1.1rem 0 0 1.1rem;
+  }
+
+  .interview-card .motion-card-body {
+    padding-left: 1.5rem;
   }
 }
