@@ -1704,3 +1704,111 @@ body.modal-open {
     align-items: stretch;
   }
 }
+
+/* Ajuste visual de la sección Redes sociales */
+.social-section {
+  background: var(--off-white);
+  color: var(--charcoal);
+}
+
+.social-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.social-layout .section-kicker,
+.social-layout .section-title,
+.social-layout p {
+  color: inherit;
+}
+
+.social-cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.35rem;
+}
+
+.social-card {
+  position: relative;
+  min-height: 310px;
+  padding: 2rem;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 1px solid rgba(15, 15, 15, 0.08);
+  box-shadow: 0 24px 60px rgba(15, 15, 15, 0.12);
+}
+
+.social-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, rgba(200, 169, 107, 0.96), rgba(232, 220, 200, 0.62));
+  z-index: 0;
+}
+
+.social-card.tiktok::before {
+  background: linear-gradient(160deg, rgba(15, 15, 15, 0.94), rgba(79, 93, 58, 0.86));
+}
+
+.social-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.social-icon {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+  background: rgba(250, 248, 243, 0.82);
+  color: var(--charcoal);
+  font-size: 1.55rem;
+  font-weight: 900;
+}
+
+.social-card h3 {
+  margin: 0 0 0.65rem;
+  font-size: 1.6rem;
+  color: var(--charcoal);
+}
+
+.social-card p {
+  color: rgba(15, 15, 15, 0.74);
+  margin-bottom: 1.2rem;
+}
+
+.social-card.tiktok h3,
+.social-card.tiktok p {
+  color: var(--off-white);
+}
+
+.social-card .btn {
+  align-self: flex-start;
+}
+
+.btn-secondary.dark {
+  color: var(--charcoal);
+  border-color: rgba(15, 15, 15, 0.72);
+  background: rgba(250, 248, 243, 0.92);
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.18);
+}
+
+.btn-secondary.dark:hover,
+.btn-secondary.dark:focus-visible {
+  color: var(--black);
+  background: var(--gold);
+  border-color: var(--gold);
+}
+
+@media (max-width: 900px) {
+  .social-layout {
+    grid-template-columns: 1fr;
+  }
+}
