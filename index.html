@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Seboruco: historia, cultura y tradiciones. Un espacio digital para preservar la memoria, identidad y legado cultural." />
+  <title>Seboruco | Historia, Cultura y Tradiciones</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
+
+  <header class="site-header" id="siteHeader">
+    <nav class="navbar" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img" focusable="false">
+            <path d="M8 52h48" />
+            <path d="M14 52V28l18-12 18 12v24" />
+            <path d="M25 52V36h14v16" />
+            <path d="M32 16V7" />
+            <path d="M27 10h10" />
+            <path d="M17 30h30" />
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong>SEBORUCO</strong>
+          <small>Historia · Cultura · Tradición</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menú de navegación">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#historia">Historia</a></li>
+        <li><a href="#tradiciones">Tradiciones</a></li>
+        <li><a href="#cultura">Cultura local</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#voces">Voces</a></li>
+        <li><a href="#blog">Blog cultural</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+      <div class="header-social" aria-label="Redes sociales">
+        <a href="https://www.instagram.com/vozdelatradicion/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Instagram de Voz de la Tradición">Instagram</a>
+        <a href="https://www.tiktok.com/@voz.de.la.tradicion" target="_blank" rel="noopener noreferrer" aria-label="Abrir TikTok de Voz de la Tradición">TikTok</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido-principal">
+    <section class="hero" id="inicio" aria-label="Portada principal de Seboruco">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Patrimonio vivo de los Andes tachirenses</p>
+        <h1>Seboruco</h1>
+        <h2>Historia, Cultura y Tradiciones</h2>
+        <p class="hero-text">Seboruco es memoria, es identidad, es legado. Este espacio digital nace para preservar nuestras raíces, celebrar lo que somos y compartirlo con el mundo.</p>
+        <div class="hero-actions" aria-label="Acciones principales">
+          <a class="btn btn-primary" href="#historia">Conoce nuestra historia</a>
+          <a class="btn btn-secondary" href="#tradiciones">Explora tradiciones</a>
+        </div>
+      </div>
+      <div class="scroll-indicator" aria-hidden="true">
+        <span></span>
+      </div>
+    </section>
+
+    <section class="section intro-section" id="sobre">
+      <div class="container split-layout">
+        <div class="section-copy reveal">
+          <p class="section-kicker">Sobre Seboruco</p>
+          <h2>El Pesebre de los Andes</h2>
+          <p>Seboruco, conocido cariñosamente como la Ciudad de los Cuatro Nombres o el Pesebre de los Andes, es un municipio emblemático del estado Táchira, Venezuela. Su geografía montañosa abraza una identidad cultural y religiosa profundamente arraigada.</p>
+          <p>En sus calles empinadas, en su iglesia de tres torres, en la música, la gastronomía y la calidez de su gente, el pueblo conserva una memoria viva que se transmite de generación en generación.</p>
+        </div>
+        <figure class="feature-photo-card reveal" aria-label="Imagen representativa del Pesebre de los Andes">
+          <img src="assets/portadapesebre.jpg" alt="Vista representativa de Seboruco, el Pesebre de los Andes">
+          <figcaption class="photo-label">
+            <span>Memoria andina viva</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section history-section" id="historia">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Historia</p>
+          <h2>Historia de Seboruco</h2>
+          <p>Un recorrido por las raíces indígenas, la fundación religiosa y civil, la vida agrícola y los símbolos que han dado forma a la identidad seboruquense.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div>
+              <h3>Raíces indígenas Seborucos</h3>
+              <p>La historia del territorio se vincula con la resistencia de los indígenas Seborucos, pertenecientes a la gran familia de los Timotocuicas. Por su ubicación, fue un punto estratégico de paso entre el norte y el sur de los Andes venezolanos.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div>
+              <h3>Fundación de San Pedro de Seboruco</h3>
+              <p>Su fundación formal se relaciona con un hecho civil y religioso ocurrido en 1778, liderado por Enrique de Alonso y el párroco Francisco de Borja y Contreras, bajo el nombre oficial de San Pedro de Seboruco.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div>
+              <h3>Tierra fértil, café y caña</h3>
+              <p>Con el paso del tiempo, la fertilidad de sus tierras impulsó la producción de café y caña de azúcar, atrayendo familias que consolidaron un pueblo de calles empinadas, casas coloniales y profundo arraigo comunitario.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div>
+              <h3>Iglesia de tres torres</h3>
+              <p>La imponente iglesia dedicada a San Pedro Apóstol se convirtió en uno de los símbolos más visibles de la fe, la historia y la identidad cultural del municipio.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section traditions-section" id="tradiciones">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Tradiciones</p>
+          <h2>Tradiciones de Seboruco</h2>
+          <p>Las tradiciones de Seboruco reflejan la fe, la alegría popular, la memoria andina y el espíritu comunitario de su gente. Cada celebración conserva una parte viva de la identidad del pueblo.</p>
+        </div>
+
+        <div class="traditions-filter reveal" aria-label="Filtrar tradiciones por categoría">
+          <button class="filter-btn active" type="button" data-filter="todas">Todas</button>
+          <button class="filter-btn" type="button" data-filter="religiosa">Religiosas</button>
+          <button class="filter-btn" type="button" data-filter="navidena">Navideñas</button>
+          <button class="filter-btn" type="button" data-filter="popular">Populares</button>
+          <button class="filter-btn" type="button" data-filter="carnaval">Carnavalescas</button>
+        </div>
+
+        <div class="traditions-grid">
+          <article class="tradition-card reveal" data-category="religiosa navidena" data-title="El Paso de los Reyes Magos" data-image="assets/pasoreyes.png" data-image-alt="Representación del Paso de los Reyes Magos en Seboruco" data-date="6 de enero" data-description="Cada 6 de enero se realiza una representación teatral callejera viviente de gran importancia para el pueblo. Los tres Reyes Magos —Melchor, Gaspar y Baltasar— recorren las principales calles a caballo, acompañados por pastores y la comunidad en general, simulando la búsqueda del Niño Jesús hasta llegar a un pesebre viviente instalado en la plaza Bolívar o en la iglesia." data-requirements="Trajes coloniales y de época, túnicas, capas, coronas, caballos ornamentados, actores locales con diálogos ensayados, caramelos para repartir a los niños y montaje logístico del pesebre principal." data-importance="Representa la unión entre fe, teatro popular, participación comunitaria y transmisión de la tradición religiosa a las nuevas generaciones.">
+            <div class="tradition-image"><img src="assets/pasoreyes.png" alt="Representación del Paso de los Reyes Magos en Seboruco"></div>
+            <span class="tradition-number">01</span>
+            <div class="tradition-icon">👑</div>
+            <span class="tradition-tag">Religiosa · Navideña</span>
+            <h3>El Paso de los Reyes Magos</h3>
+            <p>Representación callejera del 6 de enero donde los Reyes Magos recorren el pueblo hasta llegar al pesebre viviente.</p>
+            <button class="read-more" type="button">Ver más</button>
+          </article>
+
+          <article class="tradition-card reveal" data-category="popular" data-title="La Carrera de Carruchas" data-image="assets/carruchas.png" data-image-alt="Carrera de carruchas en las calles de Seboruco" data-date="Fiestas patronales o época decembrina" data-description="Es una de las tradiciones recreativas más emocionantes, celebrada usualmente en el marco de las fiestas patronales o decembrinas. Aprovechando las pronunciadas pendientes y bajadas empinadas que caracterizan a las calles de Seboruco, los competidores se lanzan en vehículos artesanales sin motor, desafiando la gravedad y alcanzando velocidades considerables." data-requirements="Carruchas artesanales de madera o metal, rolineras como ruedas, sistema básico de frenos manual, cascos, protecciones corporales, vallado de seguridad, sacos de arena en esquinas peligrosas y comité de cronometraje." data-importance="Expresa la creatividad popular, el espíritu competitivo sano y la apropiación festiva de las calles empinadas del pueblo.">
+            <div class="tradition-image"><img src="assets/carruchas.png" alt="Carrera de carruchas en las calles de Seboruco"></div>
+            <span class="tradition-number">02</span>
+            <div class="tradition-icon">🛞</div>
+            <span class="tradition-tag">Popular · Recreativa</span>
+            <h3>La Carrera de Carruchas</h3>
+            <p>Competencia en vehículos artesanales sin motor que aprovecha las bajadas empinadas de las calles de Seboruco.</p>
+            <button class="read-more" type="button">Ver más</button>
+          </article>
+
+          <article class="tradition-card reveal" data-category="popular" data-title="El Palo Encebado" data-image="assets/palo.png" data-image-alt="Juego tradicional del Palo Encebado en Seboruco" data-date="Ferias y fiestas populares" data-description="Un juego tradicional de ferias y fiestas populares que pone a prueba la destreza, la fuerza física y el trabajo en equipo de los jóvenes del pueblo. Consiste en un tronco de madera liso y muy alto plantado de forma vertical, cubierto por completo con grasa o sebo. En la cima se cuelgan premios atractivos." data-requirements="Tronco de madera pulido de entre 5 y 8 metros de altura, abundante grasa industrial o sebo animal, premios en efectivo o productos amarrados en el tope y equipos de participantes que organizan estrategias para alcanzar la cima." data-importance="Fortalece el encuentro comunitario, el juego tradicional y la cooperación entre participantes.">
+            <div class="tradition-image"><img src="assets/palo.png" alt="Juego tradicional del Palo Encebado en Seboruco"></div>
+            <span class="tradition-number">03</span>
+            <div class="tradition-icon">🪵</div>
+            <span class="tradition-tag">Popular · Juego tradicional</span>
+            <h3>El Palo Encebado</h3>
+            <p>Juego popular donde los participantes intentan subir un tronco cubierto de grasa para alcanzar los premios de la cima.</p>
+            <button class="read-more" type="button">Ver más</button>
+          </article>
+
+          <article class="tradition-card reveal" data-category="religiosa navidena" data-title="La Bajada del Niño Jesús" data-image="assets/bajadaniño.png" data-image-alt="Bajada del Niño Jesús en Seboruco" data-date="Inicio de las festividades navideñas" data-description="Un acto de profunda devoción católica que marca el inicio formal de las festividades navideñas en hogares y templos. La imagen sagrada del Niño Jesús se desciende solemnemente desde su altar o desde un lugar elevado del templo mediante un sistema de hilos o poleas decoradas, simbolizando la llegada de Dios a la Tierra." data-requirements="Imagen religiosa del Niño Jesús, sistema seguro de cuerdas, cintas o poleas ocultas entre arreglos florales, agrupaciones musicales de parrandas y aguinaldos, velas o faroles para los feligreses y rezos del rosario cantado." data-importance="Simboliza la llegada del Niño Jesús y abre un tiempo de fe, música y unión familiar.">
+            <div class="tradition-image"><img src="assets/bajadaniño.png" alt="Bajada del Niño Jesús en Seboruco"></div>
+            <span class="tradition-number">04</span>
+            <div class="tradition-icon">🕯️</div>
+            <span class="tradition-tag">Religiosa · Navideña</span>
+            <h3>La Bajada del Niño Jesús</h3>
+            <p>Acto devocional que marca el inicio de la Navidad y simboliza la llegada del Niño Jesús a la comunidad.</p>
+            <button class="read-more" type="button">Ver más</button>
+          </article>
+
+          <article class="tradition-card reveal" data-category="religiosa popular" data-title="Fiestas Patronales en honor a San Pedro Apóstol" data-image="assets/feriaseboruco.png" data-image-alt="Fiestas patronales en honor a San Pedro Apóstol en Seboruco" data-date="29 de junio" data-description="Es la celebración de mayor envergadura en el municipio, cuyo día central es el 29 de junio. Seboruco se viste de gala con misas solemnes, procesiones con la imagen del santo por las principales calles, música de banda, quema de pólvora y grandes reencuentros familiares." data-requirements="Coordinación entre Iglesia Católica, autoridades civiles y cofradías locales, preparación de tarima para eventos culturales, ornamentación floral del altar y de la silleta procesional, contratación de bandas, permisos de seguridad y logística para torneos deportivos." data-importance="Es una de las manifestaciones centrales de identidad, fe y reencuentro comunitario del municipio.">
+            <div class="tradition-image"><img src="assets/feriaseboruco.png" alt="Fiestas patronales en honor a San Pedro Apóstol en Seboruco"></div>
+            <span class="tradition-number">05</span>
+            <div class="tradition-icon">⛪</div>
+            <span class="tradition-tag">Religiosa · Patronal</span>
+            <h3>Fiestas Patronales en honor a San Pedro Apóstol</h3>
+            <p>Celebración principal del municipio, con misas, procesiones, música, pólvora y encuentros familiares.</p>
+            <button class="read-more" type="button">Ver más</button>
+          </article>
+
+          <article class="tradition-card reveal" data-category="religiosa navidena" data-title="La Paradura del Niño" data-image="assets/ParaduraNiño.png" data-image-alt="Paradura del Niño en la tradición andina de Seboruco" data-date="Del 1 de enero al 2 de febrero" data-description="Celebrada entre el 1 de enero y el 2 de febrero, Día de la Candelaria. Es una tradición andina donde el Niño Jesús es ‘parado’ del pesebre y colocado de pie. Si la figura es ‘robada’ previamente por un vecino, se organiza una comitiva de búsqueda con música por las calles hasta restituirlo." data-requirements="Padrinos y madrinas para vestir y cargar al Niño Jesús, pañuelos blancos de seda, cantores populares, versos específicos de la paradura, velas blancas y brindis tradicional con bizcochuelo andino, vino pasita o ponche crema." data-importance="Mantiene viva la religiosidad andina, el canto tradicional y la participación familiar y vecinal.">
+            <div class="tradition-image"><img src="assets/ParaduraNiño.png" alt="Paradura del Niño en la tradición andina de Seboruco"></div>
+            <span class="tradition-number">06</span>
+            <div class="tradition-icon">🎶</div>
+            <span class="tradition-tag">Religiosa · Andina</span>
+            <h3>La Paradura del Niño</h3>
+            <p>Tradición andina donde el Niño Jesús es levantado del pesebre y paseado con cantos, rezos y música.</p>
+            <button class="read-more" type="button">Ver más</button>
+          </article>
+
+          <article class="tradition-card reveal" data-category="religiosa" data-title="El Velorio de la Cruz de Mayo" data-image="assets/cruzmayo.png" data-image-alt="Velorio de la Cruz de Mayo en Seboruco" data-date="3 de mayo" data-description="Se conmemora cada 3 de mayo. Es un ritual ligado a la fe y a la agricultura de la zona. Se adorna una cruz con flores naturales y papeles coloridos para rendirle culto, rezar por las buenas cosechas de los campos locales y pedir protección contra los desastres naturales." data-requirements="Cruz de madera de gran tamaño, flores silvestres recolectadas en las montañas, papeles coloridos, guirnaldas, altar techado provisional y participación de rezanderos y cantores locales para entonar décimas y cantos sagrados." data-importance="Une espiritualidad, agricultura y memoria campesina en una práctica de protección y agradecimiento.">
+            <div class="tradition-image"><img src="assets/cruzmayo.png" alt="Velorio de la Cruz de Mayo en Seboruco"></div>
+            <span class="tradition-number">07</span>
+            <div class="tradition-icon">✝️</div>
+            <span class="tradition-tag">Religiosa · Agrícola</span>
+            <h3>El Velorio de la Cruz de Mayo</h3>
+            <p>Ritual de fe y tradición agrícola donde se adorna una cruz para pedir protección y buenas cosechas.</p>
+            <button class="read-more" type="button">Ver más</button>
+          </article>
+
+          <article class="tradition-card reveal" data-category="navidena popular" data-title="La Quema del Año Viejo" data-image="assets/quemaañoviejo.png" data-image-alt="Quema del Año Viejo en Seboruco" data-date="31 de diciembre" data-description="Se realiza exactamente a la medianoche del 31 de diciembre. Consiste en la elaboración de un muñeco de trapo a escala humana que representa el año que termina. Puede tener un toque satírico relacionado con eventos del año y se quema para simbolizar la purificación y el inicio de un nuevo ciclo." data-requirements="Ropa vieja, zapatos, paja, periódicos o aserrín para el relleno, pirotecnia menor con precaución, testamento satírico escrito en rima y supervisión vecinal en una zona segura de la calle." data-importance="Marca simbólicamente el cierre de un ciclo y el deseo colectivo de renovación para el año que comienza.">
+            <div class="tradition-image"><img src="assets/quemaañoviejo.png" alt="Quema del Año Viejo en Seboruco"></div>
+            <span class="tradition-number">08</span>
+            <div class="tradition-icon">🔥</div>
+            <span class="tradition-tag">Navideña · Popular</span>
+            <h3>La Quema del Año Viejo</h3>
+            <p>Tradición del 31 de diciembre donde se quema un muñeco que representa el año que termina.</p>
+            <button class="read-more" type="button">Ver más</button>
+          </article>
+
+          <article class="tradition-card reveal" data-category="carnaval popular" data-title="El Entierro de la Sardina" data-image="assets/sardina.png" data-image-alt="Entierro de la Sardina en Seboruco" data-date="Miércoles de Ceniza" data-description="Manifestación satírica que se realiza tradicionalmente el Miércoles de Ceniza para marcar de manera jocosa el fin de las festividades de Carnaval y el inicio de la Cuaresma. Se simula un cortejo fúnebre donde se pasea una sardina ficticia acompañada de personas disfrazadas de viudas alegres." data-requirements="Réplica vistosa de una sardina hecha de madera o cartón, camilla o urna pequeña para transportarla, disfraces de viudas, personaje de sacerdote ficticio y acompañamiento de la comunidad con parodias y música de carnaval." data-importance="Combina humor popular, crítica satírica y ritual festivo para despedir el Carnaval.">
+            <div class="tradition-image"><img src="assets/sardina.png" alt="Entierro de la Sardina en Seboruco"></div>
+            <span class="tradition-number">09</span>
+            <div class="tradition-icon">🐟</div>
+            <span class="tradition-tag">Carnavalesca · Satírica</span>
+            <h3>El Entierro de la Sardina</h3>
+            <p>Manifestación satírica del Miércoles de Ceniza que despide el Carnaval y anuncia el inicio de la Cuaresma.</p>
+            <button class="read-more" type="button">Ver más</button>
+          </article>
+
+          <article class="tradition-card reveal" data-category="navidena religiosa" data-title="Las Alboradas Musicales Navideñas" data-image="assets/Alboradas.png" data-image-alt="Alboradas musicales navideñas en Seboruco" data-date="Del 16 al 24 de diciembre" data-description="Entre el 16 y el 24 de diciembre, el pueblo se despierta de madrugada con el estallido de morteretes y agrupaciones musicales que recorren las calles empedradas para convocar alegremente a toda la población a las Misas de Aguinaldos." data-requirements="Agrupaciones de música navideña con instrumentos tradicionales de cuerda y percusión, fuegos artificiales de estruendo, apertura del templo parroquial a tempranas horas y logística comunitaria para ofrecer chocolate caliente, café, pan criollo o buñuelos." data-importance="Activa la alegría navideña andina y convierte la madrugada en un espacio de música, fe y encuentro comunitario.">
+            <div class="tradition-image"><img src="assets/Alboradas.png" alt="Alboradas musicales navideñas en Seboruco"></div>
+            <span class="tradition-number">10</span>
+            <div class="tradition-icon">🎄</div>
+            <span class="tradition-tag">Navideña · Musical</span>
+            <h3>Las Alboradas Musicales Navideñas</h3>
+            <p>Recorridos musicales de madrugada que convocan al pueblo a las Misas de Aguinaldos entre el 16 y el 24 de diciembre.</p>
+            <button class="read-more" type="button">Ver más</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="tradition-modal" id="traditionModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-backdrop" data-close-modal></div>
+      <article class="modal-card" role="document">
+        <button class="modal-close" type="button" aria-label="Cerrar detalle de la tradición" data-close-modal>×</button>
+        <span class="modal-kicker" id="modalDate"></span>
+        <h2 id="modalTitle"></h2>
+        <figure class="modal-image-wrap">
+          <img id="modalImage" src="" alt="">
+        </figure>
+        <p id="modalDescription"></p>
+        <div class="modal-detail-grid">
+          <div>
+            <h3>Requerimientos</h3>
+            <p id="modalRequirements"></p>
+          </div>
+          <div>
+            <h3>Importancia cultural</h3>
+            <p id="modalImportance"></p>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <section class="section culture-section" id="cultura">
+      <div class="container split-layout reverse">
+        <div class="culture-panel reveal">
+          <div class="mini-card">
+            <strong>Música de cuerda</strong>
+            <span>Aguinaldos, parrandas andinas y sonidos festivos que acompañan la vida comunitaria.</span>
+          </div>
+          <div class="mini-card">
+            <strong>Gastronomía local</strong>
+            <span>Pasteles de yuca o trigo, pizca andina, pan criollo y miche sanjonero o callejonero.</span>
+          </div>
+          <div class="mini-card">
+            <strong>Calidez comunitaria</strong>
+            <span>Jóvenes y mayores transmiten relatos, mitos y costumbres para que no desaparezcan.</span>
+          </div>
+        </div>
+        <div class="section-copy reveal">
+          <p class="section-kicker">Cultura local</p>
+          <h2>Herencia andina, fe y hospitalidad</h2>
+          <p>La cultura seboruquense nace del encuentro entre la herencia andina criolla, el fervor religioso y un fuerte sentido de vecindad. Su identidad se expresa en la música, la comida, los relatos orales y la participación activa de la comunidad.</p>
+          <p>Este sitio busca reunir esas expresiones en un entorno digital claro, accesible y cercano, para que la memoria local pueda ser conocida, valorada y compartida.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="galeria">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Galería</p>
+          <h2>Memorias visuales de Seboruco</h2>
+          <p>Imágenes que acercan la historia, la fe, las fiestas y la vida comunitaria del pueblo.</p>
+        </div>
+        <div class="coverflow-gallery reveal" aria-label="Carrusel de memorias visuales de Seboruco">
+          <button class="gallery-nav gallery-prev" type="button" aria-label="Ver imagen anterior">‹</button>
+
+          <div class="coverflow-stage" id="coverflowStage">
+            <figure class="coverflow-slide" data-title="Aguinaldos y música" data-image="assets/AGUINALDO.jpeg" data-alt="Aguinaldos y música tradicional en Seboruco">
+              <img src="assets/AGUINALDO.jpeg" alt="Aguinaldos y música tradicional en Seboruco">
+              <figcaption>Aguinaldos y música</figcaption>
+            </figure>
+            <figure class="coverflow-slide" data-title="Bajada del Niño Jesús" data-image="assets/bajadaniño1.png" data-alt="Detalle de la Bajada del Niño Jesús">
+              <img src="assets/bajadaniño1.png" alt="Detalle de la Bajada del Niño Jesús">
+              <figcaption>Bajada del Niño Jesús</figcaption>
+            </figure>
+            <figure class="coverflow-slide" data-title="Carrera de carruchas" data-image="assets/carruchas1.png" data-alt="Participantes de la carrera de carruchas">
+              <img src="assets/carruchas1.png" alt="Participantes de la carrera de carruchas">
+              <figcaption>Carrera de carruchas</figcaption>
+            </figure>
+            <figure class="coverflow-slide" data-title="Cruz de Mayo" data-image="assets/cruzmayo1.png" data-alt="Celebración de la Cruz de Mayo">
+              <img src="assets/cruzmayo1.png" alt="Celebración de la Cruz de Mayo">
+              <figcaption>Cruz de Mayo</figcaption>
+            </figure>
+            <figure class="coverflow-slide" data-title="Fiestas patronales" data-image="assets/feriaseboruco1.png" data-alt="Fiestas y feria de Seboruco">
+              <img src="assets/feriaseboruco1.png" alt="Fiestas y feria de Seboruco">
+              <figcaption>Fiestas patronales</figcaption>
+            </figure>
+            <figure class="coverflow-slide" data-title="Palo Encebado" data-image="assets/palo1.png" data-alt="Participantes del Palo Encebado">
+              <img src="assets/palo1.png" alt="Participantes del Palo Encebado">
+              <figcaption>Palo Encebado</figcaption>
+            </figure>
+            <figure class="coverflow-slide" data-title="Año Viejo" data-image="assets/quemaañovieja.png" data-alt="Muñeco tradicional de Año Viejo">
+              <img src="assets/quemaañovieja.png" alt="Muñeco tradicional de Año Viejo">
+              <figcaption>Año Viejo</figcaption>
+            </figure>
+            <figure class="coverflow-slide" data-title="Alboradas" data-image="assets/Alboradas.png" data-alt="Alboradas musicales navideñas">
+              <img src="assets/Alboradas.png" alt="Alboradas musicales navideñas">
+              <figcaption>Alboradas</figcaption>
+            </figure>
+          </div>
+
+          <button class="gallery-nav gallery-next" type="button" aria-label="Ver imagen siguiente">›</button>
+
+          <div class="gallery-dots" id="galleryDots" aria-label="Seleccionar imagen de la galería"></div>
+          <p class="gallery-hint">Haz clic en las imágenes laterales o usa las flechas para recorrer la galería.</p>
+        </div>
+
+        <div class="lightbox" id="galleryLightbox" aria-hidden="true" role="dialog" aria-label="Imagen ampliada de la galería">
+          <button class="lightbox-close" type="button" data-close-lightbox aria-label="Cerrar imagen ampliada">×</button>
+          <img id="lightboxImage" src="" alt="">
+          <p id="lightboxCaption"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section voices-section" id="voces">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Voces de la comunidad</p>
+          <h2>Relatos que dan vida al pueblo</h2>
+          <p>La memoria también se conserva en la voz de quienes han vivido, cuidado y contado la historia de Seboruco.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial reveal">
+            <p>“Cada calle guarda una historia, y cada historia nos recuerda de dónde venimos.”</p>
+            <footer>Habitante de Seboruco</footer>
+          </article>
+          <article class="testimonial reveal">
+            <p>“Preservar la tradición es enseñar a las nuevas generaciones a mirar con amor sus raíces.”</p>
+            <footer>Docente de la comunidad</footer>
+          </article>
+          <article class="testimonial reveal">
+            <p>“La cultura vive cuando se comparte, se cuenta y se celebra.”</p>
+            <footer>Cultor popular</footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section blog-section" id="blog">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Blog cultural</p>
+          <h2>Historias para leer y compartir</h2>
+          <p>Publicaciones breves para documentar leyendas, fechas, personajes, gastronomía, memoria oral y expresiones culturales del pueblo.</p>
+        </div>
+
+        <div class="blog-grid">
+          <article class="blog-card reveal" data-blog-title="Relatos que forman identidad" data-blog-category="Memoria oral" data-blog-image="assets/blog-memoria-oral.png" data-blog-alt="Memoria oral de Seboruco" data-blog-body="En Seboruco, la memoria no vive únicamente en los libros; también permanece en la voz de su gente. Cada calle, cada casa y cada encuentro familiar guarda relatos que han pasado de generación en generación, como una herencia invisible que mantiene unido al pueblo.
+
+Los abuelos, los vecinos, los cultores y las familias han sido guardianes de historias, mitos, anécdotas y recuerdos que explican la forma de ser del seboruquense. A través de la palabra compartida se conservan las costumbres, los valores, la fe y la identidad de una comunidad que reconoce en su pasado una fuente de orgullo y pertenencia.
+
+La memoria oral permite que Seboruco siga siendo contado desde la experiencia de quienes lo han vivido. Por eso, escuchar sus relatos es también una forma de preservar su historia y asegurar que las nuevas generaciones comprendan el valor de sus raíces.">
+            <div class="blog-thumb">
+              <img src="assets/blog-memoria-oral.png" alt="Memoria oral de Seboruco">
+            </div>
+            <div class="blog-content">
+              <span>Memoria oral</span>
+              <h3>Relatos que forman identidad</h3>
+              <p>Historias, mitos y recuerdos transmitidos de boca en boca por las familias y habitantes de Seboruco.</p>
+              <button class="blog-read-more" type="button">Leer más</button>
+            </div>
+          </article>
+          <article class="blog-card reveal" data-blog-title="Sabores de tradición andina" data-blog-category="Gastronomía" data-blog-image="assets/blog-gastronomia.png" data-blog-alt="Gastronomía tradicional de Seboruco" data-blog-body="La gastronomía de Seboruco es una expresión viva de su cultura andina. En sus sabores se mezclan la calidez del hogar, la memoria familiar y las prácticas culinarias transmitidas con paciencia de una generación a otra.
+
+Entre sus preparaciones tradicionales destacan los pasteles de yuca o trigo, la reconfortante pizca andina, el pan criollo horneado a la antigua y bebidas típicas como el miche sanjonero o callejonero. Cada plato no solo alimenta el cuerpo, sino que también despierta recuerdos de reuniones familiares, celebraciones religiosas, fiestas patronales y encuentros comunitarios.
+
+Comer en Seboruco es reencontrarse con la historia cotidiana del pueblo. Es reconocer que la cocina también conserva identidad, porque en cada receta permanece una parte del legado cultural de sus habitantes.">
+            <div class="blog-thumb">
+              <img src="assets/blog-gastronomia.png" alt="Gastronomía tradicional de Seboruco">
+            </div>
+            <div class="blog-content">
+              <span>Gastronomía</span>
+              <h3>Sabores de tradición andina</h3>
+              <p>Pasteles de yuca o trigo, pizca andina, pan criollo y bebidas tradicionales como parte de la memoria culinaria.</p>
+              <button class="blog-read-more" type="button">Leer más</button>
+            </div>
+          </article>
+          <article class="blog-card reveal" data-blog-title="La iglesia y las calles empinadas" data-blog-category="Patrimonio" data-blog-image="assets/blog-patrimonio.jpg" data-blog-alt="Patrimonio arquitectónico y cultural de Seboruco" data-blog-body="Seboruco conserva en su paisaje una profunda huella histórica y espiritual. Sus calles empinadas, sus casas tradicionales y su geografía montañosa forman parte de una identidad visual que distingue al pueblo dentro de los Andes tachirenses.
+
+Uno de sus símbolos más representativos es la iglesia de tres torres dedicada a San Pedro Apóstol, espacio de encuentro religioso, cultural y comunitario. A su alrededor se ha tejido parte importante de la vida social del municipio: procesiones, fiestas patronales, celebraciones familiares y momentos de fe compartida.
+
+El patrimonio de Seboruco no está solo en sus edificaciones, sino también en la forma en que sus habitantes habitan, recuerdan y valoran esos espacios. La iglesia, la plaza, las calles y las montañas componen un paisaje emocional que habla de historia, pertenencia y tradición.">
+            <div class="blog-thumb">
+              <img src="assets/blog-patrimonio.jpg" alt="Patrimonio arquitectónico y cultural de Seboruco">
+            </div>
+            <div class="blog-content">
+              <span>Patrimonio</span>
+              <h3>La iglesia y las calles empinadas</h3>
+              <p>Espacios simbólicos que forman parte del paisaje emocional, religioso e histórico de Seboruco.</p>
+              <button class="blog-read-more" type="button">Leer más</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="tradition-modal blog-modal" id="blogModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="blogModalTitle">
+      <div class="modal-backdrop" data-close-blog-modal></div>
+      <article class="modal-card blog-modal-card" role="document">
+        <button class="modal-close" type="button" aria-label="Cerrar historia del blog" data-close-blog-modal>×</button>
+        <span class="modal-kicker" id="blogModalCategory"></span>
+        <h2 id="blogModalTitle"></h2>
+        <figure class="modal-image-wrap">
+          <img id="blogModalImage" src="" alt="">
+        </figure>
+        <div class="blog-modal-body" id="blogModalBody"></div>
+      </article>
+    </div>
+
+    <section class="section social-section" id="redes">
+      <div class="container social-layout">
+        <div class="section-heading reveal">
+          <p class="section-kicker">Redes sociales</p>
+          <h2>Síguenos y comparte la memoria de Seboruco</h2>
+          <p>La tradición también se preserva cuando se comparte. A través de Instagram y TikTok, este espacio digital puede mostrar fotografías, videos, relatos, recorridos y momentos que mantienen viva la identidad del pueblo.</p>
+        </div>
+
+        <div class="social-cards">
+          <article class="social-card instagram reveal">
+            <span class="social-icon" aria-hidden="true">◎</span>
+            <h3>Instagram</h3>
+            <p>Fotografías, memorias visuales, paisajes, rostros, celebraciones y detalles culturales de Seboruco.</p>
+            <a class="btn btn-primary" href="https://www.instagram.com/vozdelatradicion/" target="_blank" rel="noopener noreferrer">Ver Instagram</a>
+          </article>
+
+          <article class="social-card tiktok reveal">
+            <span class="social-icon" aria-hidden="true">♪</span>
+            <h3>TikTok</h3>
+            <p>Videos breves de tradiciones, recorridos, música, voces de la comunidad y expresiones culturales del pueblo.</p>
+            <a class="btn btn-secondary dark" href="https://www.tiktok.com/@voz.de.la.tradicion" target="_blank" rel="noopener noreferrer">Ver TikTok</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contacto">
+      <div class="container contact-layout">
+        <div class="section-copy reveal">
+          <p class="section-kicker">Contacto</p>
+          <h2>Comparte tu historia</h2>
+          <p>¿Tienes una historia, fotografía o recuerdo sobre Seboruco? Este espacio también se construye con la voz de su comunidad.</p>
+          <div class="contact-details">
+            <span>✉ contacto@seboruco-cultural.com</span>
+            <span>● Redes oficiales del proyecto:</span>
+            <div class="contact-social-links">
+              <a href="https://www.instagram.com/vozdelatradicion/" target="_blank" rel="noopener noreferrer">Instagram: @vozdelatradicion</a>
+              <a href="https://www.tiktok.com/@voz.de.la.tradicion" target="_blank" rel="noopener noreferrer">TikTok: @voz.de.la.tradicion</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" aria-label="Formulario de contacto">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Escribe tu nombre" required />
+
+          <label for="correo">Correo electrónico</label>
+          <input id="correo" name="correo" type="email" placeholder="tucorreo@email.com" required />
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Comparte una historia, recuerdo o fotografía..." required></textarea>
+
+          <button class="btn btn-primary" type="submit">Enviar mensaje</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div>
+        <strong>Seboruco</strong>
+        <p>Memoria, identidad y tradición para las nuevas generaciones.</p>
+      </div>
+      <nav aria-label="Enlaces del pie de página">
+        <a href="#inicio">Inicio</a>
+        <a href="#historia">Historia</a>
+        <a href="#tradiciones">Tradiciones</a>
+        <a href="#blog">Blog</a>
+        <a href="#redes">Redes</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="footer-social" aria-label="Redes sociales del proyecto">
+        <a href="https://www.instagram.com/vozdelatradicion/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.tiktok.com/@voz.de.la.tradicion" target="_blank" rel="noopener noreferrer">TikTok</a>
+      </div>
+      <p class="copyright">© 2026 Seboruco. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
