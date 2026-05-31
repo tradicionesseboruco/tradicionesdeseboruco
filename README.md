@@ -71,3 +71,8 @@ La sección **Seboruco en movimiento** también incluye dos tarjetas de entrevis
 - Sr. Evelio “Pollo”: https://www.tiktok.com/@voz.de.la.tradicion/video/7643442962352868629
 
 Estas entrevistas no se suben como archivos pesados; se abren desde TikTok para que la página cargue más rápido.
+
+
+## Actualización
+
+Se agregó la entrevista en TikTok de la Prof. Maura Pérez, cronista del municipio de Seboruco, en la sección “Seboruco en movimiento”.

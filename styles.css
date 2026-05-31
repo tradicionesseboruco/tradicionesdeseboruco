@@ -455,7 +455,7 @@ textarea {
   border-radius: 50%;
   background: var(--olive);
   color: var(--off-white);
-  font-size: 1.6rem;
+  font-size: 1.45rem;
 }
 
 
@@ -1920,12 +1920,12 @@ body.modal-open {
   display: grid;
   grid-template-columns: 78px 1fr;
   align-items: center;
-  min-height: 190px;
+  min-height: 155px;
 }
 
 .interview-icon {
-  width: 54px;
-  height: 54px;
+  width: 50px;
+  height: 50px;
   display: grid;
   place-items: center;
   margin-left: 1.1rem;
