@@ -1,53 +1,64 @@
-# Sitio web cultural de Seboruco
+# Seboruco | Historia, Cultura y Tradiciones
 
-Proyecto listo para GitHub Pages.
+Versión actualizada para GitHub Pages.
 
-## Archivos principales
+## Estructura requerida
 
-- `index.html`
-- `styles.css`
-- `script.js`
-- `README.md`
+Sube estos archivos en la raíz del repositorio:
 
-## Imágenes necesarias en `assets/`
+```text
+index.html
+styles.css
+script.js
+README.md
+assets/
+```
 
-Sube estas imágenes directamente dentro de la carpeta `assets/`, con los nombres exactos:
+Dentro de `assets/` deben estar las imágenes y el video con estos nombres exactos, respetando mayúsculas, minúsculas, acentos y extensión:
 
-- `iglesia de seboruco.jpg` → imagen principal del hero.
-- `portadapesebre.jpg` → imagen de la sección “El Pesebre de los Andes”.
-- `pasoreyes.png` → El Paso de los Reyes Magos.
-- `carruchas.png` → La Carrera de Carruchas.
-- `palo.png` → El Palo Encebado.
-- `bajadaniño.png` → La Bajada del Niño Jesús.
-- `feriaseboruco.png` → Fiestas Patronales en honor a San Pedro Apóstol.
-- `ParaduraNiño.png` → La Paradura del Niño.
-- `cruzmayo.png` → El Velorio de la Cruz de Mayo.
-- `quemaañoviejo.png` → La Quema del Año Viejo.
-- `sardina.png` → El Entierro de la Sardina.
-- `Alboradas.png` → Las Alboradas Musicales Navideñas.
-- `AGUINALDO.jpeg`, `bajadaniño1.png`, `carruchas1.png`, `cruzmayo1.png`, `feriaseboruco1.png`, `palo1.png`, `quemaañovieja.png` → galería visual.
-- `blog-memoria-oral.png` → imagen de la entrada Memoria oral.
-- `blog-gastronomia.png` → imagen de la entrada Gastronomía.
-- `blog-patrimonio.jpg` → imagen de la entrada Patrimonio.
+```text
+iglesia de seboruco.jpg
+portadapesebre.jpg
+seboruco.mp4
+AGUINALDO.jpeg
+Alboradas.png
+bajadaniño.png
+bajadaniño1.png
+carruchas.png
+carruchas1.png
+cruzmayo.png
+cruzmayo1.png
+feriaseboruco.png
+feriaseboruco1.png
+palo.png
+palo1.png
+ParaduraNiño.png
+pasoreyes.png
+quemaañovieja.png
+quemaañoviejo.png
+sardina.png
+blog-gastronomia.png
+blog-memoria-oral.png
+blog-patrimonio.jpg
+```
 
-## Importante
+## Video
 
-GitHub Pages distingue mayúsculas, minúsculas, espacios, eñes y acentos. Los nombres deben estar exactamente iguales a los usados en el código.
+La sección **Seboruco en movimiento** usa esta ruta:
 
-## Publicación en GitHub Pages
+```html
+assets/seboruco.mp4
+```
 
-1. Sube todos los archivos a la raíz del repositorio.
-2. Crea la carpeta `assets`.
-3. Sube las imágenes dentro de `assets`.
-4. En GitHub entra a `Settings > Pages`.
-5. Selecciona la rama principal y guarda.
+Si el video no se ve en GitHub Pages, revisa:
 
+1. Que el archivo esté dentro de `assets/`.
+2. Que se llame exactamente `seboruco.mp4`.
+3. Que la extensión sea realmente `.mp4`.
+4. Que no supere el límite de subida de GitHub.
+5. Que hayas esperado unos minutos después de hacer `Commit changes`.
 
 ## Redes sociales integradas
 
-La página incluye enlaces oficiales del proyecto en el menú superior, sección de redes, contacto y footer:
-
 - Instagram: https://www.instagram.com/vozdelatradicion/
 - TikTok: https://www.tiktok.com/@voz.de.la.tradicion
-
-Si más adelante cambian las cuentas, busca estas URLs en `index.html` y reemplázalas por las nuevas.

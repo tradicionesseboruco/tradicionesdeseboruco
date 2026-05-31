@@ -1812,3 +1812,104 @@ body.modal-open {
     grid-template-columns: 1fr;
   }
 }
+
+/* Sección de video: Seboruco en movimiento */
+.video-section {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 15% 12%, rgba(200, 169, 107, 0.16), transparent 34%),
+    linear-gradient(135deg, #0f0f0f 0%, #1d1c19 48%, #2f3526 100%);
+  color: var(--off-white);
+}
+
+.video-section .section-kicker,
+.video-section h2,
+.video-section p {
+  color: var(--off-white);
+}
+
+.video-section .section-heading p:not(.section-kicker) {
+  color: rgba(250, 248, 243, 0.74);
+}
+
+.video-feature {
+  position: relative;
+  max-width: 980px;
+  margin: 0 auto;
+  border-radius: 34px;
+  overflow: hidden;
+  border: 1px solid rgba(200, 169, 107, 0.34);
+  background: rgba(15, 15, 15, 0.42);
+  box-shadow: 0 34px 90px rgba(0, 0, 0, 0.42);
+}
+
+.seboruco-video {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #000;
+}
+
+.video-caption {
+  position: absolute;
+  left: 1.4rem;
+  right: 1.4rem;
+  bottom: 1.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.2rem;
+  border-radius: 22px;
+  background: rgba(15, 15, 15, 0.58);
+  border: 1px solid rgba(245, 239, 230, 0.14);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.video-caption span {
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.video-caption strong {
+  color: var(--off-white);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+.btn-video {
+  border: 1px solid rgba(245, 239, 230, 0.36);
+  color: var(--off-white);
+  background: rgba(250, 248, 243, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.btn-video:hover,
+.btn-video:focus-visible {
+  background: rgba(200, 169, 107, 0.22);
+  border-color: rgba(200, 169, 107, 0.8);
+}
+
+@media (max-width: 680px) {
+  .video-feature {
+    border-radius: 24px;
+  }
+
+  .video-caption {
+    position: static;
+    border-radius: 0;
+    justify-content: flex-start;
+    background: rgba(15, 15, 15, 0.78);
+  }
+
+  .seboruco-video {
+    aspect-ratio: 9 / 14;
+    object-fit: contain;
+  }
+}
