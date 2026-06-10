@@ -76,3 +76,10 @@ Estas entrevistas no se suben como archivos pesados; se abren desde TikTok para 
 ## Actualización
 
 Se agregó la entrevista en TikTok de la Prof. Maura Pérez, cronista del municipio de Seboruco, en la sección “Seboruco en movimiento”.
+
+
+## Nuevas imágenes de entrevistas
+Asegúrate de tener también en la carpeta `assets/` estos archivos:
+- `NABORAGUILAR.png`
+- `EVELIOPEREZ.png`
+- `MAURA.png`

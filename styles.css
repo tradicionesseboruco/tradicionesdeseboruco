@@ -1918,27 +1918,32 @@ body.modal-open {
 
 .interview-card {
   display: grid;
-  grid-template-columns: 78px 1fr;
+  grid-template-columns: 94px 1fr;
   align-items: center;
-  min-height: 155px;
+  gap: 0.35rem;
+  min-height: 165px;
+  padding: 0.65rem;
 }
 
-.interview-icon {
-  width: 50px;
-  height: 50px;
-  display: grid;
-  place-items: center;
-  margin-left: 1.1rem;
-  border-radius: 18px;
-  color: var(--black);
-  background: var(--gold);
-  font-size: 1.6rem;
-  font-weight: 900;
-  box-shadow: 0 15px 38px rgba(200, 169, 107, 0.25);
+.interview-photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.interview-photo {
+  width: 74px;
+  height: 74px;
+  display: block;
+  object-fit: cover;
+  border-radius: 22px;
+  border: 1px solid rgba(245, 239, 230, 0.22);
+  background: rgba(250, 248, 243, 0.08);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.28);
 }
 
 .interview-card .motion-card-body {
-  padding-left: 0.25rem;
+  padding-left: 0.15rem;
 }
 
 .interview-card .motion-card-body p {
@@ -2003,8 +2008,14 @@ body.modal-open {
     min-height: auto;
   }
 
-  .interview-icon {
-    margin: 1.1rem 0 0 1.1rem;
+  .interview-photo-wrap {
+    justify-content: flex-start;
+    padding: 1.1rem 0 0 1.1rem;
+  }
+
+  .interview-photo {
+    width: 82px;
+    height: 82px;
   }
 
   .interview-card .motion-card-body {
