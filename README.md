@@ -86,4 +86,4 @@ Asegúrate de tener también en la carpeta `assets/` estos archivos:
 
 
 ## Logo de redes sociales
-Asegúrate de tener en `assets/` el archivo `LOGOCUENTA.png` para que se vea el logo en las tarjetas de Instagram y TikTok.
+Asegúrate de tener en la carpeta `assets/` el archivo `LOGOCUENTA.png` para que aparezca el logo en las tarjetas de Instagram y TikTok.
